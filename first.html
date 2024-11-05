@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Cinta untuk Kamu 💖</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fce4ec;
+            font-family: Arial, sans-serif;
+            color: #d81b60;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .hidden {
+            display: none;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: #d81b60;
+            color: #ffffff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #c2185b;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <h1>Hai, annelita putri ❤️</h1>
+        <p>Ada sebuah pesan spesial untuk kamu...</p>
+        <button onclick="revealMessage()">Buka Pesannya 💌</button>
+        <p id="message" class="hidden"> gimana kabarnya hari ini?, udah lama ya kita ga ketemu,to be honest i miss you so badd. semoga kita bisa ketemu dilain waktu, love you 🌹</p>
+    </div>
+
+    <script>
+        function revealMessage() {
+            document.getElementById("message").classList.remove("hidden");
+        }
+    </script>
+
+</body>
+</html>
